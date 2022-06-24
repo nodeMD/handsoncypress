@@ -11,10 +11,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: npm install
-      - run: >
-        BASE_URL=${{ secrets.BASE_URL }}
-        TEST_USER_EMAIL=${{ secrets.TEST_USER_EMAIL }}
-        TEST_USER_PASSWORD=${{ secrets.TEST_USER_PASSWORD }}
       - run: npm run cy:run
         env:
           BASE_URL: ${{ secrets.BASE_URL }}
