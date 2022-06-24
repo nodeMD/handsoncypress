@@ -5,9 +5,9 @@ install all dependencies:
 `npm i`
 
 set environmental variables:
-1. create .env file in main directory
-2. copy content of .env.example to .env file
-3. fill *all* the variables with data, like shown on this single example:
+1. create `.env` file in main directory
+2. copy content of `.env.example` to `.env` file
+3. fill **all** the variables with data, like shown on this single example:
 `TEST_USER_EMAIL=standard_user`
 
 start all tests:
@@ -26,7 +26,7 @@ fix test code linting:
 `npm run cy:lint-fix`
 
 # To setup github actions
-open your repository settings
+open your repository `Settings`
 then click on `Secrets` -> `Actions`
-click `New repository secret`
-add secrets for all environmental variables from .env.example file
+next click button `New repository secret` and
+add secrets for **all** environmental variables from `.env.example` file
