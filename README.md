@@ -24,3 +24,9 @@ check test code linting:
 
 fix test code linting:
 `npm run cy:lint-fix`
+
+# To setup github actions
+open your repository settings
+then click on `Secrets` -> `Actions`
+click `New repository secret`
+add secrets for all environmental variables from .env.example file
