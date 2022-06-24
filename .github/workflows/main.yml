@@ -1,0 +1,19 @@
+name: cypress.e2e
+
+on: 
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  web-test:
+    name: E2E Testing
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: npm install
+      - run: npm run cy:run
+        env:
+          BASE_URL: ${{ secrets.BASE_URL }}
+          TEST_USER_EMAIL: ${{ secrets.TEST_USER_EMAIL }}
+          TEST_USER_PASSWORD: ${{ secrets.TEST_USER_PASSWORD }}
+          
