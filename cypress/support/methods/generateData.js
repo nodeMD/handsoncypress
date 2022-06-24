@@ -21,4 +21,5 @@ export const validUser = {
   password: Cypress.env("testUserPassword"),
 };
 
-export const randomItemNumberInRange = (min, max) => faker.datatype.number({ min, max });
+export const randomItemNumberInRange = (min, max) =>
+  faker.datatype.number({ min, max });

@@ -53,10 +53,10 @@ describe("Checkout tests", () => {
   it("user is unable to continue without filling checkout form with proper data", () => {
     cy.clickContinue();
     cy.checkValidation(checkoutPage.validations.firstNameIsRequired);
-    cy.fillFirstName(fakeUser.name)
+    cy.fillFirstName(fakeUser.name);
     cy.clickContinue();
     cy.checkValidation(checkoutPage.validations.lastNameIsRequired);
-    cy.fillLastName(fakeUser.lastName)
+    cy.fillLastName(fakeUser.lastName);
     cy.clickContinue();
     cy.checkValidation(checkoutPage.validations.postalCodeIsRequired);
   });
