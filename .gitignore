@@ -1,0 +1,11 @@
+.DS_Store
+
+# dependencies
+node_modules
+
+# cypress artifacts folders
+cypress/screenshots
+cypress/videos
+
+# dotenv file with environmental variables
+.env

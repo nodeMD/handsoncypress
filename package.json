@@ -1,0 +1,28 @@
+{
+  "name": "handsoncypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy:lint": "eslint --ext .js ./cypress --color",
+    "cy:lint-fix": "eslint --ext .js ./cypress --color --fix",
+    "cy:format": "prettier --write ./cypress/**/*.js",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
+  },
+  "author": "Maciej Dynieski",
+  "license": "ISC",
+  "dependencies": {
+    "@faker-js/faker": "6.3.1",
+    "cypress": "10.1.0",
+    "dotenv": "16.0.1",
+    "eslint": "8.17.0",
+    "prettier": "2.7.1"
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-cypress": "2.12.1",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-prettier": "4.0.0"
+  }
+}
