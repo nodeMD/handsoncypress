@@ -1,5 +1,7 @@
 const { defineConfig } = require("cypress");
-const { config } = require("dotenv").config({ path: ".env" });
+const dotenv = require("dotenv")
+
+dotenv.config({ path: ".env" });
 
 module.exports = defineConfig({
   env: {
